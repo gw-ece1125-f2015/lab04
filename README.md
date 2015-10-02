@@ -1,6 +1,6 @@
 # Lab 4
 
-An associative array (or dictionary) is an abstract data type that maps input keys to output values (for example: names to telephone numbers, or words to definitions). In this assignment, you will create an associative array to store keys and values with a simple singly linked­list implementation.
+An associative array (or dictionary) is an abstract data type that maps input keys to output values (for example: names to telephone numbers, or words to definitions). In this assignment, you will create an associative array to store keys and values with a simple singly linked-list implementation.
 
 You will use the following definition of a linked list node:
 
@@ -26,7 +26,8 @@ You have to implement the following functions for your code:
 void list_print(struct list_node *head);
 struct list_node *list_find_exact(struct list_node *head, const char *key);
 struct list_node *list_find_before(struct list_node *head, const char *key);
-int list_insert(struct list_node **head, struct list_node *before, struct list_data data);
+int list_insert(struct list_node **head, struct list_node *before,
+                struct list_data data);
 void list_destroy(struct list_node *head);
 ```
 
@@ -39,8 +40,9 @@ Your code will output the entire list after every insertion. After inserting all
 Example run command will look like this:
 
 ```
-> ./dict 1 <inputfile> <lookups>
+> ./dict 1 <inputfile> <optional lookups>
 ```
+(The 1 indicates that the data should be sorted.)
 
 Read the code to understand the details of command line arguments. Replace `dict` with `dict_full` to run the sample executable. Note that your executable must give the exact same output as our executable. This doesn't mean that what we have is perfect, so if you believe that your results are correct and ours wrong, let us know as soon as possible.
 
